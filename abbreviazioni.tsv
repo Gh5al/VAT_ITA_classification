@@ -1,171 +1,217 @@
-abrogato	abr.	
-aggiornamento	agg.	
-allegato	all.	
-appendice	app.	
-argomenta	arg.	
-articolo	art.	
-articoli	artt.	
-Atti parlamentari Atti	parl.	
-autore	a.	
-autore medesimo	ID.	
-autori medesimi	IDD.	
-autori	aa.	
-Bollettino ufficiale della regione sarda	B.U.Sar.	
-Bollettino ufficiale Trentino-Alto Adige	B.U.T.	
-Bürgerliches Gesetzbuch	BGB	
-capitolo	cap.	
-capoverso	cpv.	
-Carta costituzionale Carta	cost.	
-Carta dei diritti fondamentali dell'Unione Europea	Carta UE	
-Carta del lavoro	Carta lav.	
-circolare	circ.	
-citato	cit.	
-citati	citt.	
-codice canonico	c.can.	c. can.
-codice civile	c.c.	c. c.
-codice del consumo	c.cons.	c. cons.
-codice della navigazione	c.nav.	c. nav.
-codice delle obbligazioni	c.obbl.	c. obbl.
-codice di commercio	c.comm.	c. comm.
-codice di procedura civile	c.p.c.	
-codice di procedura penale	c.p.p.	
-codice penale	c.p.	c. p.
-codice penale militare di pace	c.p.m.p.	
-codice penale militare di guerra	c.p.m.g.	
-codice postale	c.post.	c. post.
-colonna	c.	
-colonne	cc.	
-combinato disposto	comb.disp.	comb. disp.
-conforme	conf.	
-confronta	cfr.	
-contro	contra	
-Convenzione	Conv.	
-cosiddetto	c.d.	c. d.
-cosiddetti	c.dd.	c. dd.
-Costituzione	Cost.	
-decreto commissario per il territorio di Trieste	d.comm.Trieste	d. comm. Trieste
-decreto del Presidente del Consiglio	d.P.C.	
-decreto del Presidente della Repubblica	d.P.R.	
-decreto del Presidente regionale Valle d'Aosta	d.P.A.	
-decreto governatoriale	d.g.	
-decreto interministeriale	d.interm.	
-decreto legge	d.l.	d. l.
-decreto legislativo	d.lgs.	d. lgs.
-decreto legislativo del Capo provvisorio dello Stato	d.lg.C.p.S.	
-decreto legislativo del Presidente della Repubblica	d.lg.P.R.	
-decreto legislativo luogotenenziale	d.lg.luog.	
-decreto ministeriale	d.m.	
-difforme	diff.	
-disposizioni di attuazione e transitorie	disp.att.	disp. att.
-disposizioni preliminari	disp.prel.	disp. prel.
-disposizioni regolamentari	disp.reg.	disp. reg.
-disposizioni transitorie	disp.trans.	disp. trans.
-esempio	es.	
-Execution ordnung	E.O.	
-Fogli annunzi legali	FAL	
-foglio	f.	
-fogli	ff.	
-Gazzetta Ufficiale della Regione siciliana	G.U.Si.	
-Gazzetta Ufficiale della Repubblica	G.U.	
-Handel Gesetzbuch	HGB	
-inedito	ined.	
-ivi	ivi	
-legge	l.	
-leggi	ll.	
-legge adozione	l.ad.	l. ad.
-legge assegno	l.ass.	l. ass.
-legge bancaria	l.banc.	l. banc.
-legge cambiaria	l.camb.	l. camb.
-legge comunale e provinciale	l.com.prov.	l. com. prov.
-legge consolare	l.cons.	l. cons.
-legge costituzionale	l.cost.	l. cost.
-legge divorzio	l.div.	l. div.
-legge fallimentare	l.fall.	l. fall.
-legge federale	l.fed.	l. fed.
-legge notarile	l.not.	l. not.
-legge ospedaliera	l.osp.	l. osp.
-legge provinciale	l.prov.	l. prov.
-legge quadro	l.q.	l. q.
-legge regionale	l.reg.	l. reg.
-legge speciale	l.spec.	l. spec.
-legge sul diritto d'autore	l.dir.aut.	l. dir. aut.
-legge uniforme	l.unif.	l. unif.
-Novella	Nov.	
-numero	n.	
-numeri	nn.	
-opera	o.	
-ordinamento giudiziario	ord.giud.	ord. giud.
-ordinamento stato civile	ord.st.civ.	ord. st. civ.
-pagina	p.	
-pagine	pp.	
-regio decreto	r.d.	r. d.
-regio decreto legge	r.d.l.	r. d. l.
-regio decreto legislativo	r.d.lg.	r. d. lg.
-regolamento	reg.	
-regolamento della navigazione marittima	reg.nav.mar.	
-relazione	rel.	
-Relazione al Re	Rel. Re	
-Relazione Commissione parlamentare	Rel. Comm. parl.	
-Relazione del Guardasigilli al codice civile	Rel. Guardasigilli	
-Risoluzione	Risol.	
-ristampa	rist.	
-e seguente	s.	
-e seguenti	ss.	
-sentenza	sent.	
-sentenze	sentt.	
-società in nome collettivo	s.n.c.	
-società per azioni	s.p.a.	
-società a responsabilità limitata	s.r.l.	
-specialmente	spec.	
-Statuto dei lavoratori	St. lav.	St.lav.
-Statuto della Regione siciliana	St. Si.	
-Statuto speciale per il Trentino-Alto Adige	St. T.	
-Statuto speciale per la Sardegna	St. Sar.	
-Statuto speciale per la Valle d'Aosta	St. A.	
-Trattato	Tratt.	
-Trattato che istituisce la Comunità europea	Tratt. CE	
-Trattato sull'unione europea	Tratt. UE	
-Trattato sul funzionamento Unione europea	Tratt. Lisbona	Tratt. FUE
-testo unico	t.u.	
-testo unico della legge comunale e provinciale (r.d. 4 febbraio 1915, n. 148)	t.u. com. prov. 1915	
-testo unico della legge comunale e provinciale (r.d. 3 marzo 1934, n. 383)	t.u. com. prov. 1934	
-testo unico delle leggi di pubblica sicurezza	testo unico delle leggi di p.s.	t.u.l.p.s.
-testo unico leggi sanitarie	t.u. san.	
-testo unico per la finanza locale	t.u. fin. loc.	
-titolo	tit.	
-tomo	t.	
-vedi	v.	
-vedi avanti	infra	
-vedi dietro	supra	
-vigente	vig.	
-voce	voce	
-volume	vol.	
-volumi	voll.	
-Zivil-Prozess Ordnung	ZPO	
-Zwangsvertstergerung-Gesetz	ZVG	
-Autorità Garante Autorità	gar.	
-autorità giudiziaria ordinaria	a.g.o.	
-carabinieri	C.C.	
-Consiglio di Stato	Cons. St.	
-Consiglio Superiore della Magistratura	C.S.M.	
-Corte costituzionale	Corte cost.	
-Corte d'Appello	App.	
-Corte d'Assise d'Appello	Ass. app.	
-Corte d'Assise	Ass.	
-Corte dei conti	Corte conti	
-Corte di Cassazione	Cass.	
-Corte di Cassazione-Sezione penale	Cass. Sez. pen.	
-giudice conciliatore	Conc.	
-giudice di pace	giud. pace	
-giudice tutelare	giud. tut.	
-Giunta provinciale amministrativa	Giunta prov. amm.	
-Pretura o pretore	Pret.	
-Procura della Repubblica	Proc. Rep.	
-Pubblica amministrazione	P.A.	
-Pubblico Ministero	p.m.	
-Sezione	Sez.	
-Sezioni unite	Sez. un.	
-Suprema Corte	S.C.	
-Tribunale amministrativo regionale	TAR T.A.R.	
-Tribunale Superiore delle acque	Trib. sup. acque	
+abrogato	abr.
+aggiornamento	agg.
+allegato	all.
+appendice	app.
+argomenta	arg.
+articolo	art.
+articoli	artt.
+Atti parlamentari Atti	parl.
+autore	a.
+autore medesimo	ID.
+autori medesimi	IDD.
+autori	aa.
+Bollettino ufficiale della regione sarda	B.U.Sar.
+Bollettino ufficiale Trentino-Alto Adige	B.U.T.
+Bürgerliches Gesetzbuch	BGB
+capitolo	cap.
+capoverso	cpv.
+Carta costituzionale Carta	cost.
+Carta dei diritti fondamentali dell'Unione Europea	Carta UE
+Carta del lavoro	Carta lav.
+circolare	circ.
+citato	cit.
+citati	citt.
+codice canonico	c.can.
+codice canonico	c. can.
+codice civile	c.c.
+codice civile	c. c.
+codice del consumo	c.cons.
+codice del consumo	c. cons.
+codice della navigazione	c.nav.
+codice della navigazione	c. nav.
+codice delle obbligazioni	c.obbl.
+codice delle obbligazioni	c. obbl.
+codice di commercio	c.comm.
+codice di commercio	c. comm.
+codice di procedura civile	c.p.c.
+codice di procedura penale	c.p.p.
+codice penale	c.p.
+codice penale	c. p.
+codice penale militare di pace	c.p.m.p.
+codice penale militare di guerra	c.p.m.g.
+codice postale	c.post.
+codice postale	c. post.
+colonna	c.
+colonne	cc.
+combinato disposto	comb.disp.
+combinato disposto	comb. disp.
+conforme	conf.
+confronta	cfr.
+contro	contra
+Convenzione	Conv.
+cosiddetto	c.d.
+cosiddetto	c. d.
+cosiddetti	c.dd.
+cosiddetti	c. dd.
+Costituzione	Cost.
+decreto commissario per il territorio di Trieste	d.comm.Trieste
+decreto commissario per il territorio di Trieste	d. comm. Trieste
+decreto del Presidente del Consiglio	d.P.C.
+decreto del Presidente del Consiglio	DPC
+decreto del Presidente della Repubblica	d.P.R.
+decreto del Presidente della Repubblica	DPR
+decreto del Presidente regionale Valle d'Aosta	d.P.A.
+decreto governatoriale	d.g.
+decreto interministeriale	d.interm.
+decreto legge 	d.l.
+decreto legge 	d. l.
+decreto legislativo 	d.lgs.
+decreto legislativo 	d. lgs.
+decreto legislativo del Capo provvisorio dello Stato	d.lg.C.p.S.
+decreto legislativo del Presidente della Repubblica	d.lg.P.R.
+decreto legislativo luogotenenziale	d.lg.luog.
+decreto ministeriale	d.m.
+difforme	diff.
+disposizioni di attuazione e transitorie	disp.att.
+disposizioni di attuazione e transitorie	disp. att.
+disposizioni preliminari	disp.prel.
+disposizioni preliminari	disp. prel.
+disposizioni regolamentari	disp.reg.
+disposizioni regolamentari	disp. reg.
+disposizioni transitorie	disp.trans.
+disposizioni transitorie	disp. trans.
+esempio	es.
+Execution ordnung	E.O.
+Fogli annunzi legali	FAL
+foglio	f.
+fogli	ff.
+Gazzetta Ufficiale della Regione siciliana	G.U.Si.
+Gazzetta Ufficiale della Repubblica	G.U.
+Handel Gesetzbuch	HGB
+inedito	ined.
+ivi	ivi
+legge	l.
+leggi	ll.
+legge adozione	l.ad.
+legge adozione	l. ad.
+legge assegno	l.ass.
+legge assegno	l. ass.
+legge bancaria	l.banc.
+legge bancaria	l. banc.
+legge cambiaria	l.camb.
+legge cambiaria	l. camb.
+legge comunale e provinciale	l.com.prov.
+legge comunale e provinciale	l. com. prov.
+legge consolare	l.cons.
+legge consolare	l. cons.
+legge costituzionale	l.cost.
+legge costituzionale	l. cost.
+legge divorzio	l.div.
+legge divorzio	l. div.
+legge fallimentare	l.fall.
+legge fallimentare	l. fall.
+legge federale	l.fed.
+legge federale	l. fed.
+legge notarile	l.not.
+legge notarile	l. not.
+legge ospedaliera	l.osp.
+legge ospedaliera	l. osp.
+legge provinciale	l.prov.
+legge provinciale	l. prov.
+legge quadro	l.q.
+legge quadro	l. q.
+legge regionale	l.reg.
+legge regionale	l. reg.
+legge speciale	l.spec.
+legge speciale	l. spec.
+legge sul diritto d'autore	l.dir.aut.
+legge sul diritto d'autore	l. dir. aut.
+legge uniforme	l.unif.
+legge uniforme	l. unif.
+Novella	Nov.
+numero	n.
+numeri	nn.
+opera	o.
+ordinamento giudiziario	ord.giud.
+ordinamento giudiziario	ord. giud.
+ordinamento stato civile	ord.st.civ.
+ordinamento stato civile	ord. st. civ.
+pagina	p.
+pagine	pp.
+regio decreto	r.d.
+regio decreto	r. d.
+regio decreto legge	r.d.l.
+regio decreto legge	r. d. l.
+regio decreto legislativo	r.d.lg.
+regio decreto legislativo	r. d. lg.
+regolamento	reg.
+regolamento della navigazione marittima	reg.nav.mar.
+relazione	rel.
+Relazione al Re	Rel. Re
+Relazione Commissione parlamentare	Rel. Comm. parl.
+Relazione del Guardasigilli al codice civile	Rel. Guardasigilli
+Risoluzione	Risol.
+ristampa	rist.
+e seguente	s.
+e seguenti	ss.
+sentenza	sent.
+sentenze	sentt.
+società in nome collettivo	s.n.c.
+società per azioni	s.p.a.
+società a responsabilità limitata	s.r.l.
+specialmente	spec.
+Statuto dei lavoratori	St. lav.
+Statuto dei lavoratori	St.lav.
+Statuto della Regione siciliana	St. Si.
+Statuto speciale per il Trentino-Alto Adige	St. T.
+Statuto speciale per la Sardegna	St. Sar.
+Statuto speciale per la Valle d'Aosta	St. A.
+Trattato	Tratt.
+Trattato che istituisce la Comunità europea	Tratt. CE
+Trattato sull'unione europea	Tratt. UE
+Trattato sul funzionamento Unione europea	Tratt. Lisbona
+Trattato sul funzionamento Unione europea	Tratt. FUE
+testo unico	t.u.
+testo unico della legge comunale e provinciale (r.d. 4 febbraio 1915, n. 148)	t.u. com. prov. 1915
+testo unico della legge comunale e provinciale (r.d. 3 marzo 1934, n. 383)	t.u. com. prov. 1934
+testo unico delle leggi di pubblica sicurezza	testo unico delle leggi di p.s.
+testo unico delle leggi di pubblica sicurezza	t.u.l.p.s.
+testo unico leggi sanitarie	t.u. san.
+testo unico per la finanza locale	t.u. fin. loc.
+titolo	tit.
+tomo	t.
+vedi	v.
+vedi avanti	infra
+vedi dietro	supra
+vigente	vig.
+voce	voce
+volume	vol.
+volumi	voll.
+Zivil-Prozess Ordnung	ZPO
+Zwangsvertstergerung-Gesetz	ZVG
+Autorità Garante Autorità	gar.
+autorità giudiziaria ordinaria	a.g.o.
+carabinieri	C.C.
+Consiglio di Stato	Cons. St.
+Consiglio Superiore della Magistratura	C.S.M.
+Corte costituzionale	Corte cost.
+Corte d'Appello	App.
+Corte d'Assise d'Appello	Ass. app.
+Corte d'Assise	Ass.
+Corte dei conti	Corte conti
+Corte di Cassazione	Cass.
+Corte di Cassazione-Sezione penale	Cass. Sez. pen.
+giudice conciliatore	Conc.
+giudice di pace	giud. pace
+giudice tutelare	giud. tut.
+Giunta provinciale amministrativa	Giunta prov. amm.
+Pretura o pretore	Pret.
+Procura della Repubblica	Proc. Rep.
+Pubblica amministrazione	P.A.
+Pubblico Ministero	p.m.
+Sezione	Sez.
+Sezioni unite	Sez. un.
+Suprema Corte	S.C.
+Tribunale amministrativo regionale	TAR T.A.R.
+Tribunale Superiore delle acque	Trib. sup. acque
 Tribunale	Trib.	
