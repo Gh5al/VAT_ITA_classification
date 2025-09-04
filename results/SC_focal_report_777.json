@@ -1,0 +1,74 @@
+{
+    "Rule": {
+        "precision": 0.808,
+        "recall": 0.9181818181818182,
+        "f1-score": 0.8595744680851064,
+        "support": 110
+    },
+    "Prec": {
+        "precision": 0.8780487804878049,
+        "recall": 0.8470588235294118,
+        "f1-score": 0.8622754491017964,
+        "support": 85
+    },
+    "Itpr": {
+        "precision": 0.6521739130434783,
+        "recall": 0.43478260869565216,
+        "f1-score": 0.5217391304347826,
+        "support": 69
+    },
+    "Princ": {
+        "precision": 0.2857142857142857,
+        "recall": 0.16666666666666666,
+        "f1-score": 0.2105263157894737,
+        "support": 24
+    },
+    "Class": {
+        "precision": 1.0,
+        "recall": 0.07142857142857142,
+        "f1-score": 0.13333333333333333,
+        "support": 14
+    },
+    "Aut": {
+        "precision": 0.4166666666666667,
+        "recall": 0.38461538461538464,
+        "f1-score": 0.4,
+        "support": 13
+    },
+    "Syst": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3
+    },
+    "Tele": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 4
+    },
+    "micro avg": {
+        "precision": 0.7607142857142857,
+        "recall": 0.6614906832298136,
+        "f1-score": 0.707641196013289,
+        "support": 322
+    },
+    "macro avg": {
+        "precision": 0.5050754557390295,
+        "recall": 0.3528417341396881,
+        "f1-score": 0.37343108709306155,
+        "support": 322
+    },
+    "weighted avg": {
+        "precision": 0.7291551424387359,
+        "recall": 0.6614906832298136,
+        "f1-score": 0.6707015618280386,
+        "support": 322
+    },
+    "samples avg": {
+        "precision": 0.7177954847277556,
+        "recall": 0.6859229747675962,
+        "f1-score": 0.6831341301460824,
+        "support": 322
+    }
+}
