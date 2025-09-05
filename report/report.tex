@@ -5,13 +5,13 @@
 \documentclass[11pt]{article}
 
 % Remove the "guidelines" option to generate the final version.
-\usepackage[guidelines]{nlpreport} % show guidelines
-%\usepackage[]{nlpreport} % hide guidelines
+%\usepackage[guidelines]{nlpreport} % show guidelines
+\usepackage[]{nlpreport} % hide guidelines
 
 
 % Standard package includes
 \usepackage{times}
-\usepackage{latexsym}
+\usepackage{latexsym}   
 
 % For proper rendering and hyphenation of words containing Latin characters (including in bib files)
 \usepackage[T1]{fontenc}
@@ -35,9 +35,10 @@
 \usepackage{xcolor}
 \usepackage{booktabs} % for tables
 
-
-
-
+% my personal packages
+\usepackage{tablefootnote}
+\usepackage{graphicx}
+\bibliographystyle{plain}
 
 
 % THE pdfinfo Title AND Author ARE NOT NECESSARY, THEY ARE METADATA FOR THE FINAL PDF FILE
@@ -72,9 +73,7 @@ Master's Degree in Artificial Intelligence, University of Bologna\\
 \explanation{
 The abstract is very brief summary of your report. Try to keep it no longer than 15-20 lines at most. Write your objective, your approach, and your main observations (what are the findings that make this report worthwhile reading?)}
 
-Multiple models have been tried and tested for legal argument mining on English language datasets but similar work is lacking for Italian language datasets.
-We work to transpose the techniques currently tested to a corresponding italian dataset and test new models and techniques to overcome the issues inherent with the italian dataset, such as smaller size and higher imbalance.
-We analyze the results of the newly tested models.
+We try to transpose the techniques currently tested for legal argument mining on english datasets \cite{grundler-etal-2022-detecting} to a corresponding italian dataset \cite{galli2022} and test new models and techniques to overcome the issues inherent with the italian dataset (smaller size, higher imbalance).
 
 %\end{quote}
 \end{abstract}
@@ -94,33 +93,26 @@ INTERESTING TEXT EXAMPLES THAT EXCEED THE MAXIMUM LENGTH OF THE REPORT CAN BE PL
 \attention{MAX 1 COLUMN FOR ASSIGNMENT REPORTS / 2 COLUMNS FOR PROJECT OR PW / 3 FOR COMBINED REPORTS.}
 
 \explanation{
-The Introduction is an executive summary, which you can think of as an extended abstract.  Start by writing a brief description of the problem you are tackling and why it is important. (Skip it if this is an assignment report).}
+The Introduction is an executive summary, which you can think of as an extended abstract.  Start by writing a brief description of the problem you are tackling and why it is important. (Skip it if this is an assignment report).} 
+
+The study of argumentation in legal contexts is a research topic that combines Artificial Intelligence and Law to determine how different claims and opinions are proposed, debated and evaluated, considering relations and inter-dependencies.\cite{grundler-etal-2022-detecting} 
 
 \explanation{Then give a short overview of known/standard/possible approaches to that problems, if any, and what are their advantages/limitations.} 
 
-The study of argumentation in legal contexts has its roots in logic, philosophy, and linguistics, as it studies how different claims and opinions are proposed, debated, and evaluated, considering their relations and inter-dependencies.
-The legal domain offers a natural scenario for the application of different argument models as well as novel machine learning and natural language processing techniques in order to perform legal reasoning.
-Existing literature has already evaluated multiple models and variants on english language Datasets like Demosthenes \cite{grundler-etal-2022-detecting}.
+Machine Learning techniques for Natural Language Processing are increasingly being explored to solve the tasks in this field, which include:
 
-An italian language dataset suitable to work on legal argument mining has been recently developed \cite{galli2022}.
+\begin{itemize}
+    \item Argument Detection (AD): classification task that given a sentence, classifies it as premise, conclusion, or neither;
+    \item Argument Classification (AC): binary classification task that takes a sentence that is known to be argumentative and classifies it as premise or conclusion;
+    \item Type Classification (TC): a multi-label classification problem where a sentence that is known to be a premise is classified as legal and/or factual;
+    \item Scheme Classification (SC): multi-label classification task that given a sentence known to be a legal premise, classifies it according to its argumentation scheme \cite{Walton_Reed_Macagno_2008}
+\end{itemize}
 
-TODO objective 
+In this work, we address the tasks AC and DC on the Italian VAT dataset \cite{galli2022}. Both tasks are affected by data imbalance, which is particularly severe in the SC task, as shown in Figure \ref{fig:results}, where some classes have very few examples compared to the majority ones. To mitigate this issue, we applied different strategies, including focal loss \cite{lin2018focallossdenseobject} and data augmentation techniques. 
 
 \explanation{After that, discuss your approach, and motivate why you follow that approach. If you are drawing inspiration from an existing model, study, paper, textbook example, challenge, \dots, be sure to add all the necessary references~\cite{DBLP:journals/corr/abs-2204-02311,DBLP:conf/acl/LorenzoMN22,DBLP:conf/clef/AnticiBIIGR21,DBLP:conf/ijcai/NakovCHAEBPSM21,DBLP:conf/naacl/RottgerVHP22,DBLP:journals/toit/LippiT16}.\footnote{\href{https://en.wikipedia.org/wiki/The_Muppet_Show}{Add only what is relevant.}}}
 
-TODO approach
-
-Class imbalance \cite{henning-etal-2023-survey}
-
-GE3 \cite{wei-2021-good}
-
-Focal loss \cite{lin2018focallossdenseobject}
-
-\cite{LICARI2024105908}
-
 \explanation{Next, give a brief summary of your experimental setup: how many experiments did you run on which dataset. Last, make a list of the main results or take-home lessons from your work.}
-
-TODO experimental setup
 
 \attention{HERE AND EVERYWHERE ELSE: ALWAYS KEEP IN MIND THAT, CRUCIALLY, WHATEVER TEXT/CODE/FIGURES/IDEAS/... YOU TAKE FROM ELSEWHERE MUST BE CLEARLY IDENTIFIED AND PROPERLY REFERENCED IN THE REPORT.}
 
@@ -130,7 +122,20 @@ TODO experimental setup
 
 \explanation{The Background section is where you briefly provide whatever background information on the domain or challenge you're addressing and/or on the techniques/approaches you're using, that (1) you think is necessary for the reader to understand your work and design choices, and (2) is not something that has been explained to you during the NLP course (to be clear: do NOT repeat explanations of things seen in class, we already know that stuff). If you adapt paragraphs from articles, books, online resources, etc: be sure to clarify which parts are yours and which ones aren't.}
 
-TODO background
+The field of legal argument mining has seen remarkable work on english language datasets. Multiple high-quality datasets have been realized, most notably Demosthenes \cite{grundler-etal-2022-detecting}.
+However, to our knowledge, only one Italian language dataset has been released for this domain, specifically Italian VAT \cite{galli2022}. This dataset includes annotations for all of the tasks cited above. The size of this dataset, however, is limited and some scheme classes do not have sufficient support for training a machine learning model, and moreover the classes are not equally distributed.
+
+This issue prompted our research for data augmentation techniques and models capable of handling this imbalance and successfully using this dataset for Argument Classification and Scheme Classification tasks.
+
+Class imbalance is a widely studied issue in the field of Artificial Intelligence, the literature includes many solutions for different cases and with different outcomes\cite{henning-etal-2023-survey}. These include:
+\begin{itemize}
+    \item random oversampling of classes with smaller support;
+    \item hidden space augmentation with techniques like GE3 \cite{wei-2021-good}, REPRINT \cite{Wei2022ReprintAR} or ECRT \cite{NEURIPS2021_b151ce49};
+    \item advanced losses like focal loss \cite{lin2018focallossdenseobject}, self-adjusting dice loss \cite{li2020dicelossdataimbalancednlp} and label distribution-aware margin loss \cite{cao2019learningimbalanceddatasetslabeldistributionaware};
+    \item dynamic curriculum learning \cite{wang2019dynamiccurriculumlearningimbalanced}
+\end{itemize}
+
+Similarly to datasets, work on machine learning models for legal argumentation mining has also focused mainly on english language. Much fewer studies have been done on italian language specific models (notably \cite{galli2022}). Some work has also been done to fine tune models specifically for the legal domain in italian language (notably \textit{Italian-Legal-BERT} \cite{LICARI2024105908}).
 
 \section{System description}
 \label{sec:system}
@@ -145,23 +150,56 @@ Describe the system or systems you have implemented (architectures, pipelines, e
 It is a good idea to add figures to illustrate your pipeline and/or architecture(s)
 (see Figure~\ref{fig:architecture})
 %
-\begin{figure*}
-    \centering
-    \includegraphics[width=\textwidth]{img/architecture.pdf}
-    \caption{Model architecture}
-    \label{fig:architecture}
-\end{figure*}
 }
+For both tasks, we used as baseline the SVM algorithm with TF–IDF embedding, which previously obtained the best results on these tasks in \cite{grundler-etal-2022-detecting} and \cite{galli2022}. We then used \textit{Italian-Legal-BERT} \cite{LICARI2024105908}, a transformer pre-trained model on legal texts, and fine tuned it for each task with a specific classification head: a binary output for argument classification and a multi-binary output head for scheme classification.
 
+The scheme classification task presents significant challenges due to its highly imbalanced and multi-label nature. To mitigate these issues, we employed strategies such as replacing the standard cross-entropy loss with weighted focal loss and applying data augmentation techniques to enhance the representation of rare classes. We also evaluated the performance of the model on the argument classification task using focal loss, since there is also an imbalance between the two classes.
+
+To address class imbalance in both tasks, we used the \textit{weighted focal loss}. This is a variant of cross-entropy loss that focuses more on samples that are difficult for the model, while assigning less weight to those predicted correctly. By incorporating class weights, the rare classes contribute more to the loss during training, preventing the model from simply learning to predict the majority classes. This approach helps the model achieve better performance on rare classes.
+The weights applied to the loss function were computed as the inverse frequency of each class by dividing the total number of samples by the count of samples for that class. Then, we applied a logarithmic transformation and finally, we divided the weights by the smallest one, in order to enlarge the weights of rare classes.\cite{lin2018focallossdenseobject}
+
+We applied two data augmentation approaches to the training set. During augmentation, if a sample from a rare class also belonged to a majority class, that majority class was augmented as well to maintain consistency.
+
+The first approach consists of translating the original sentences into English using \textit{Google Translator}. Then, with the \textit{NLPaug} library\cite{ma2019nlpaug}, we applied the contextual augmenter based on BERT-large, which replaces words by leveraging the contextual embeddings provided by the model, in order to generate the desired number of augmented samples. The number of augmented samples generated for each original instance depends on the class, the smaller the support of a class in the training set, the more new samples we generate for it. In the next section, we report the number for each augmented class. To complete the augmentation process, the 
+augmented sentences were translated back into Italian.
+
+The second augmentation strategy is based on the generation of new samples using a Large Language Model, specifically \textit{Meta LLaMA 3.2-3b-Instruct}. We provide the model with both a system prompt and a user prompt. The system prompt contains the instructions for the LLM on the expected behavior, output format and what to avoid, while the user prompt contains the original text to be augmented.
+
+Data splitting was handled differently for the two tasks. For argument classification, we used a standard random split into training, validation, and test sets. For scheme classification, instead, we applied a stratified strategy: first, we separated documents linked to rare classes, then we split the remaining documents with a standard approach, and finally split the separated documents and added to the sets. In this way, the split is no longer completely random, but it ensures that rare classes are represented in all sets, which in our case significantly improved the results.
+
+The models were trained on the training set, tuned on the validation set, and evaluated on the test set. For the Argument Classification task we measured the macro-F1 score. Instead, for scheme classification, given the imbalance between classes and our attempt to mitigate the issue, we used macro-F1 score to measure performance across all classes, treating them equally, and also micro-F1 score was used to check overall performance of the model.
 \section{Data}
 \label{sec:data}
 \attention{MAX 2 COLUMNS / 3 FOR COMBINED REPORTS. OMIT SECTION IN ASSIGNMENT REPORTS.}
 
 \explanation{Provide a brief description of your data including some statistics and pointers (references to articles/URLs) to be used to obtain the data. Describe any pre-processing work you did. Links to datasets must be placed later in Section~\ref{sec:links}.}
 
-TODO Data
+The Italian VAT dataset, which we used for this work, includes for each argumentation annotations about the role of sentences (Premise or Conclusion, useful for Argument Classification tasks) and for premise sentences includes also annotations about its argumentation scheme (useful for Scheme Classification tasks).
+This dataset uses the following argumentation schemes:\cite{grundler-etal-2022-detecting}\cite{adele-guidelines}
+\begin{itemize}
+    \item \lstinline|Rule|: Argument from an established rule
+    \item \lstinline|Prec|: Argument from precedent
+    \item \lstinline|Itpr|: Argument from interpretation
+    \item \lstinline|Princ|: Argumentation from principle
+    \item \lstinline|Class|: Argument from verbal Classification
+    \item \lstinline|Aut|: Authoritative argument
+    \item \lstinline|Syst|: Argument from systematic interpretation
+    \item \lstinline|Tele|: Teleological argument
+    \item \lstinline|Lit|: Argument from literal interpretation
+    \item \lstinline|Psy|: Argumentation from intention of the legislator
+\end{itemize}
+Some of these schemes had such low support in our dataset that their use for training would have been prohibitive, even using data augmentation (see Figure \ref{fig:scheme-support}).
+For this reason, as part of data preprocessing we used an arbitrary cut-off threshold of 15 samples and ignored all schemes with fewer samples.
 
-\cite{galli2022}
+As part of data pre-processing we also dropped phrases which were not as tagged neither as premises nor as conclusions or with a NaN content in the text or argumentation scheme. We also replaced multiple whitespaces with a single space.
+
+Then we encoded the dataset for each of the two tasks separately.
+For Argument Classification, which is a binary classification task, we used a label encoder.
+For Scheme Classification, which is a multi-class classification task, we used a multi-label binarizer, creating one binary field for each scheme. Not only this is necessary for multi-class classification, it also allows us to encode the cases where a premise is labeled with multiple schemes.
+
+After data preprocessing we also applied the aforementioned data augmentation techniques in selected runs.
+
+Finally, data was split for training, validation and test sets as described above.
 
 \section{Experimental setup and results}
 \label{sec:results}
@@ -170,9 +208,35 @@ TODO Data
 \explanation{
 Describe how you set up your experiments: which architectures/configurations you used, which hyper-parameters and what methods used to set them, which optimizers, metrics, etc.
 \\
-Then, \textbf{use tables} to summarize your your findings (numerical results) in validation and test. If you don't have experience with tables in \LaTeX, you might want to use \href{https://www.tablesgenerator.com/}{\LaTeX table generator} to quickly create a table template.
+Then, \textbf{use tables} to summarize our findings (numerical results) in validation and test. If you don't have experience with tables in \LaTeX, you might want to use \href{https://www.tablesgenerator.com/}{\LaTeX table generator} to quickly create a table template.
 }
+All transformer-based experiments used Italian-Legal-BERT and its corresponding tokenizer, both loaded from the Hugging Face library.
+For augmentation, we considered only the classes \textit{Tele}, \textit{Syst}, \textit{Aut}, \textit{Class} and \textit{Princ}, generating 6, 5, 4, 3 and 1 new samples per original instance, respectively.
+For LLM based augmentation, we used \textit{Llama 3.2-3b-Instruct} variant with the \textit{transformers} library, loading the model directly on Kaggle. 
 
+First, we selected three random seeds (\textit{27}, \textit{42} and \textit{777}) and ran each model with each one of them, fixing the random seed for reproducibility and to ensure that the results were stable and not influenced by random initialization. All the runs were executed on \textit{Kaggle}.
+
+For the argument classification task, after performing a random split of the dataset into training, validation, and test sets, we first evaluated the SVM algorithm with a linear kernel using TF–IDF embeddings as a baseline. We then trained \textit{Italian-Legal-BERT} for 8 epochs using the Adam optimizer, comparing training with binary cross-entropy (BCE) and focal loss. During training, we monitored not only the validation loss but also the macro-F1 score on the validation set to better capture performance on minority classes.
+
+For the scheme classification task, which is highly imbalanced and multi-label, we applied stratified splitting strategy. As a baseline, we fitted a SVM model with TF–IDF embeddings. We then fine-tuned \textit{Italian-Legal-BERT} for 8 epochs with the Adam optimizer, first with BCE loss, then with focal loss, again monitoring macro-F1 on the validation set. To further tackle class imbalance, we then trained the model on back-translation augmented data combined with BCE loss (TNAUG+BCE), and finally on LLM augmented data with BCE loss. 
+
+After the training process, we evaluated the trained model on the test set by computing a complete classification report using the \textit{classification\_report} function from \textit{scikit-learn}. This report provides not only the overall F1-score, but also precision and recall for each individual class, alongside their support. In this way, it is possible to understand not only the global performance of the model, but also how it behaves across different classes, especially the rare ones.
+
+The results (average F1 micro and F1 macro scores) of the executions can be found in Table \ref{table:results}, instead the complete results with the different seeds can be found in figure \ref{fig:results}. 
+
+
+\begin{table*}[ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+    \hline
+        Task & \multicolumn{2}{c}{Baseline} & \multicolumn{2}{c}{BCE} & \multicolumn{2}{c}{FocalLoss} & \multicolumn{2}{c}{TNAUG+BCE} & \multicolumn{2}{c}{LLM+BCE} \\ \hline
+        ~ & micro & macro & micro & macro & micro & macro & micro & macro & micro & macro \\ \hline
+        AC & / & 0,87 & / & 0,89 & / & \textbf{0,9} & / & / & / & / \\ \hline
+        SC & 0,64 & 0,33 & 0,72 & 0,35 & 0,71 & 0,44 & 0,73 & 0,45 & \textbf{0,72} & \textbf{0,49} \\ \hline
+    \end{tabular}
+    \caption{Average score over the 3 seeds for AC and SC}
+    \label{table:results}
+\end{table*}
 
 \section{Discussion}
 \label{sec:discussion}
@@ -186,8 +250,11 @@ Here you should make your analysis of the results you obtained in your experimen
     \item error analysis: show some examples of odd/wrong/unwanted  outputs; reason about why you are getting those results, elaborate on what could/should be changed in future developments of this work.
 \end{itemize}
 }
+As shown in the Table \ref{table:results}, in the AC task, the BERT model outperforms the baseline. Both BCE and focal loss work well, with focal loss performing slightly better.  
 
+For the SC task, we decided to report both micro-F1 and macro-F1 to better understand the model’s performance. The first observation is that results are highly sensitive to the choice of seed, meaning that different data splits can lead to significantly different outcomes. The focal loss variant outperforms both the baseline and BCE loss, highlighting its effectiveness on underrepresented classes. Additionally, both augmentation techniques improve macro-F1, confirming their benefit for handling rare classes.
 
+Regarding the quality of the generated data, in the translation based approach the new instances were usually very similar to the originals. In contrast, LLM based generations were more diverse (we used a temperature of 0.5). In some cases, the samples preserved the context information and were reformulated successfully, while in others we observed issues such as the multiple repetition of a single fragment from the original text or very short outputs consisting of only a few words. We tried to mitigate these problems by specifying in the system prompt both what the LLM should produce and what it should avoid, but the model often introduced undesired artifacts, such as multiple consecutive spaces or unmatched parentheses, despite explicit instructions. Of course, the LLM we used was a small variant and was not specifically fine-tuned for legal text. However, our goal was to explore whether lightweight models could still produce useful synthetic data.
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -200,7 +267,9 @@ Did all go according to expectations?
 Was there anything surprising or worthwhile mentioning?
 After that, discuss the main limitations of the solution you have implemented, and indicate promising directions for future improvement.
 }
+In AC task, the results are quite satisfactory, though they could be improved with data augmentation techniques. Instead the SC task turned out to be particularly challenging due to the strong imbalance, its multi-label nature and the very limited support for minority classes, which makes augmenting underrepresented classes more challenging, and also because often these samples also belong to one of the majority classes. The use of techniques such as focal loss helped to improve performance, and generating synthetic data with LLMs proved to be a promising direction, even though the model we used was not fine-tuned on legal text. 
 
+Future work could focus on using bigger LLMs, that are more likely to produce better and diverse text. Another option could be to leverage LLMs fine-tuned on legal text, or even coupling LLM with a RAG (Retrieval Augmented Generation) based system that integrates a legal knowledge base to ensure more accurate and domain specific augmentation. Other possibilities could be to implement a threshold optimization process for each class, which may lead to better performance.
 
 
 \section{Links to external resources}
@@ -214,10 +283,32 @@ Insert here:
 \end{itemize}
 }
 
-\attention{DO NOT INSERT CODE IN THIS REPORT}
+\begin{itemize}
+    \item Project code: \href{https://github.com/Gh5al/VAT_ITA_classification}{github.com}
+    \item The phrasing is corrected using ChatGPT (\href{https://chat.openai.com}{openai.com})
+
+\end{itemize}
+
 
 
 
 
 \bibliography{nlpreport}
+\appendix
+\begin{figure*}
+    \centering
+    \includegraphics[width=1\linewidth]{img/Screenshot 2025-09-05 091221.png}
+    \caption{Scheme support in the dataset}
+    \label{fig:scheme-support}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{img/Screenshot 2025-09-05 144337.png}
+    \caption{Full results table}
+    \label{fig:results}
+\end{figure*}
+
+\attention{DO NOT INSERT CODE IN THIS REPORT}
+
 \end{document}
